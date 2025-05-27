@@ -1,10 +1,12 @@
-
+import product from './data/data'
 
 function App() {
   return (
     <>
       <div>
-         <h1 class="text-3xl font-bold underline text-center text-blue-500 bg-amber-400">Hello world!</h1>
+         <h1 className="text-3xl font-bold underline text-center text-blue-500">{product[0].name}</h1>
+         
+         
       </div>
     </>
   )
