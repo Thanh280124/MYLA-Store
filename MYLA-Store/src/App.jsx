@@ -1,12 +1,17 @@
-import product from './data/data'
-
+import Header from './Components/Header'
+import Hero from './Components/Hero'
+import Contact from './Components/Contact'
+import Products from './Components/Products'
+import Footer from './Components/Footer'
 function App() {
   return (
     <>
       <div>
-         <h1 className="text-3xl font-bold underline text-center text-blue-500">{product[0].name}</h1>
-         
-         
+         <Header/>
+         <Hero/>
+         <Products/>
+         <Contact/>
+         <Footer/>
       </div>
     </>
   )

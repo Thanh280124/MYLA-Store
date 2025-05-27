@@ -1,1 +1,15 @@
 @import "tailwindcss";
+:root {
+  --sky-custom: #94BBE9;
+  --green-light: #35DB4E;
+  --green-medium: #28a112;
+  --green-dark: #42C95D;
+}
+
+.bg-greenLight {
+  background-color: var(--green-dark);
+}
+
+.bg-custom-gradient {
+  background: linear-gradient(to right, #94BBE9, #35DB4E, #6ED65C);
+}
