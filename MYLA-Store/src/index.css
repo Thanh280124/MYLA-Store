@@ -32,7 +32,8 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 cột mặc định */
-  gap: 1.5rem; /* Tương đương gap-6 */
+  gap: 1.5rem;
+  padding: 20px; 
 }
 
 /* Breakpoint sm (640px): 2 cột */
@@ -54,5 +55,6 @@
 @media (min-width: 1280px) {
   .grid-container {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding: 50px;
   }
 }
