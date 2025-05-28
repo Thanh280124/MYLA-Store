@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, MapPin, User } from 'lucide-react';
-import contactImage from '../../public/assets/pic-contact-section.png'
+import contactImage from '/assets/pic-contact-section.png'
 
 function Contact() {
   return (
