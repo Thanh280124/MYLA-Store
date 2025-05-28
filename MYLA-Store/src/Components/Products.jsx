@@ -16,7 +16,7 @@ function Products() {
   const closeModal = () => setSelectedProduct(null);
 
   return (
-    <section className="container mx-auto px-4 py-8">
+    <section className="container mx-auto">
       <h2 className="text-4xl md:text-5xl font-bold text-center text-green-600 my-10">Sản Phẩm</h2>
       <div className="flex flex-col items-center gap-10 mb-20">
         <input
@@ -28,7 +28,7 @@ function Products() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-66 md:gap-10 p-5">
         {filteredProducts.map((product) => (
           <CardProduct key={product.id} product={product} onClick={openModal} />
         ))}
