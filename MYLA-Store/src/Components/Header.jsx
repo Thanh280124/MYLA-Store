@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <header className="bg-green-600 text-white shadow-lg sticky top-0 z-50">
-      <div className="container mx-auto px-5 py-5 flex justify-between md:justify-around items-center">
+      <div onClick={(e) => handleNavClick(e, 'hero')} className="container mx-auto px-5 py-5 flex justify-between md:justify-around items-center cursor-pointer">
         <div className="flex items-center space-x-4 tagesschrift-regular">
           <FcShop size={30}/>
           <h1 className="text-xl md:text-2xl font-bold">MYLA Store</h1>
