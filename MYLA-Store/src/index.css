@@ -44,7 +44,7 @@
 }
 
 /* Breakpoint md (800px): 3 cột, gap 2.5rem */
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .grid-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2.5rem; /* Tương đương md:gap-10 */
@@ -52,7 +52,7 @@
 }
 
 /* Breakpoint lg (1250px): 4 cột */
-@media (min-width: 1250px) {
+@media (min-width: 1280px) {
   .grid-container {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
