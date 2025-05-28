@@ -30,7 +30,7 @@ function Footer() {
             </ul>
         </div>
     </div>
-    <p className='text-2xl text-center mt-10 -mb-7'>@MYLA Store - Tươi Ngon Mỗi Ngày, Chất Lượng Đỉnh Cao!</p>
+    <p className='text-2xl text-center mt-10 -mb-7 playwrite-ro'>@MYLA Store - Tươi Ngon Mỗi Ngày, Chất Lượng Đỉnh Cao!</p>
    </section>
   )
 }

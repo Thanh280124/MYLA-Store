@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-
+import { FcShop } from "react-icons/fc";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,13 +21,9 @@ function Header() {
 
   return (
     <header className="bg-green-600 text-white shadow-lg sticky top-0 z-50">
-      <div className="container mx-auto px-5 py-5 flex justify-between items-center">
-        <div className="flex items-center space-x-4">
-          <img
-            src="https://via.placeholder.com/40"
-            alt="MYLA Store Logo"
-            className="w-10 h-10"
-          />
+      <div className="container mx-auto px-5 py-5 flex justify-between md:justify-around items-center">
+        <div className="flex items-center space-x-4 tagesschrift-regular">
+          <FcShop size={50}/>
           <h1 className="text-2xl md:text-3xl font-bold">MYLA Store</h1>
         </div>
 
