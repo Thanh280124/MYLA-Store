@@ -17,7 +17,7 @@ function Products() {
 
   return (
     <section>
-      <div className='container mx-auto'>
+      <div className='px-5 py-10'>
       <h2 className="text-4xl md:text-5xl font-bold text-center text-green-600 my-10">Sản Phẩm</h2>
       <div className="flex flex-col items-center gap-10 mb-20">
         <input
