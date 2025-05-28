@@ -16,14 +16,15 @@ function Products() {
   const closeModal = () => setSelectedProduct(null);
 
   return (
-    <section className="container mx-auto">
+    <section>
+      <div className='container mx-auto px-5 py-10'>
       <h2 className="text-4xl md:text-5xl font-bold text-center text-green-600 my-10">Sản Phẩm</h2>
       <div className="flex flex-col items-center gap-10 mb-20">
         <input
           type="text"
           id="searchInput"
           placeholder="Tìm kiếm sản phẩm..."
-          className="w-full max-w-md p-3 text-lg border border-gray-300 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+          className="w-50%  md:w-full md:max-w-md p-3 text-lg border border-gray-300 text-black rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 transition"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
@@ -58,6 +59,7 @@ function Products() {
           </div>
         </div>
       )}
+      </div>
     </section>
   );
 }
