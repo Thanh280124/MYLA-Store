@@ -4,7 +4,7 @@ import contactImage from '../../public/assets/pic-contact-section.png'
 
 function Contact() {
   return (
-    <section className="bg-white py-12 mb-50">
+    <section className="bg-white py-12 mb-40">
       <div className="container mx-auto px-5">
         <h2 className="text-4xl md:text-4xl font-bold text-center text-green-600 mb-20">
           Liên Hệ Với MYLA Store

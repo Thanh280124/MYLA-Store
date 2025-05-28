@@ -5,10 +5,23 @@ import { useState } from 'react';
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const headerHeight = document.querySelector('header').offsetHeight;
+      const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({
+        top: sectionTop - headerHeight,
+        behavior: 'smooth',
+      });
+    }
+    setIsOpen(false);
+  };
+
   return (
     <header className="bg-green-600 text-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-5 py-5 flex justify-between items-center">
-
         <div className="flex items-center space-x-4">
           <img
             src="https://via.placeholder.com/40"
@@ -18,7 +31,6 @@ function Header() {
           <h1 className="text-2xl md:text-3xl font-bold">MYLA Store</h1>
         </div>
 
-    
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden p-2 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-300 transition"
@@ -27,18 +39,29 @@ function Header() {
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-
         <nav
-          className={`${isOpen ? 'block' : 'hidden'} md:flex md:items-center absolute md:static top-19 left-95 rounded-xl w-[40%] py-5 text-center md:w-auto bg-green-600 md:bg-transparent z-40`}
+          className={`${isOpen ? 'block' : 'hidden'} md:flex md:items-center absolute md:static top-16 left-0 w-full md:w-auto bg-green-600 md:bg-transparent z-40`}
         >
           <div className="flex flex-col gap-5 md:flex-row md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0">
-            <a href="#" className="text-xl md:text-xl hover:text-green-200 transition">
+            <a
+              href="#hero"
+              className="text-xl md:text-xl hover:text-green-200 transition"
+              onClick={(e) => handleNavClick(e, 'hero')}
+            >
               Trang chủ
             </a>
-            <a href="#" className="text-xl md:text-xl hover:text-green-200 transition">
+            <a
+              href="#products"
+              className="text-xl md:text-xl hover:text-green-200 transition"
+              onClick={(e) => handleNavClick(e, 'products')}
+            >
               Sản Phẩm
             </a>
-            <a href="#" className="text-xl md:text-xl hover:text-green-200 transition">
+            <a
+              href="#contact"
+              className="text-xl md:text-xl hover:text-green-200 transition"
+              onClick={(e) => handleNavClick(e, 'contact')}
+            >
               Liên Hệ
             </a>
           </div>

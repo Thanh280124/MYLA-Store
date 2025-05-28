@@ -6,7 +6,7 @@ import { FaWhatsappSquare } from "react-icons/fa";
 
 function Footer() {
   return (
-   <section className='bg-[#35DB4E] text-black py-10'>
+   <section className='bg-[#35DB4E] text-white py-10'>
     <div className='container mx-auto px-5 flex flex-col md:flex-row justify-around items-center gap-10'>
         <div className='text-2xl'>
            <p className='mb-2'>Email: <span>Thanh23@gmail.com</span></p>
@@ -30,7 +30,7 @@ function Footer() {
             </ul>
         </div>
     </div>
-    <p className='text-2xl text-center mt-10'>@MYLA Store - Tươi Ngon Mỗi Ngày, Chất Lượng Đỉnh Cao!</p>
+    <p className='text-2xl text-center mt-10 -mb-7'>@MYLA Store - Tươi Ngon Mỗi Ngày, Chất Lượng Đỉnh Cao!</p>
    </section>
   )
 }
