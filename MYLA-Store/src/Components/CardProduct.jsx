@@ -9,7 +9,7 @@ function CardProduct({ product, onClick }) {
       <img
         src={product.image}
         alt={product.name}
-        className="w-full h-120 sm:h-110 object-cover rounded-lg mb-4"
+        className="w-full h-90 sm:h-90 object-fill rounded-lg mb-4"
       />
       <h2 className="text-lg sm:text-3xl font-semibold text-gray-800 mb-5">{product.name}</h2>
       <p className="text-green-600 font-medium text-3xl">{product.price}</p>
