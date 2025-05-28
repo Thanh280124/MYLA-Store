@@ -28,3 +28,32 @@
 .bg-custom-gradient {
   background: linear-gradient(to right, #94BBE9, #35DB4E, #6ED65C);
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 cột mặc định */
+  gap: 1.5rem; /* Tương đương gap-6 */
+  padding: 1.25rem; /* Tương đương p-5 */
+}
+
+/* Breakpoint sm (640px): 2 cột */
+@media (min-width: 640px) {
+  .grid-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Breakpoint md (800px): 3 cột, gap 2.5rem */
+@media (min-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem; /* Tương đương md:gap-10 */
+  }
+}
+
+/* Breakpoint lg (1250px): 4 cột */
+@media (min-width: 1250px) {
+  .grid-container {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
