@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
-import { FcShop } from "react-icons/fc";
+import { FcShop } from 'react-icons/fc';
+import { useTranslation } from 'react-i18next';
+
 function Header() {
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleNavClick = (e, sectionId) => {
@@ -19,12 +21,17 @@ function Header() {
     setIsOpen(false);
   };
 
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setIsOpen(false);
+  };
+
   return (
     <header className="bg-green-600 text-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-5 py-5 flex justify-between md:justify-around items-center">
-        <div onClick={(e) => handleNavClick(e, 'hero')} className="flex items-center space-x-4 tagesschrift-regular cursor-pointer">
-          <FcShop size={30}/>
-          <h1 className="text-xl md:text-2xl font-bold">MYLA Store</h1>
+        <div onClick={(e) => handleNavClick(e, 'hero')} className="flex items-center space-x-4 cursor-pointer">
+          <FcShop size={30} />
+          <h1 className="text-xl md:text-2xl font-bold">{t('storeName')}</h1>
         </div>
 
         <button
@@ -44,22 +51,48 @@ function Header() {
               className="text-xl md:text-xl hover:text-green-200 transition"
               onClick={(e) => handleNavClick(e, 'hero')}
             >
-              Trang chủ
+              {t('home')}
             </a>
             <a
               href="#products"
               className="text-xl md:text-xl hover:text-green-200 transition"
               onClick={(e) => handleNavClick(e, 'products')}
             >
-              Sản Phẩm
+              {t('product')}
             </a>
             <a
               href="#contact"
               className="text-xl md:text-xl hover:text-green-200 transition"
               onClick={(e) => handleNavClick(e, 'contact')}
             >
-              Liên Hệ
+              {t('contact')}
             </a>
+            <div className="flex flex-col md:flex-row gap-2">
+              <button
+                onClick={() => changeLanguage('vi')}
+                className="text-xl hover:text-green-200 transition"
+              >
+                VI
+              </button>
+              <button
+                onClick={() => changeLanguage('en')}
+                className="text-xl hover:text-green-200 transition"
+              >
+                EN
+              </button>
+              <button
+                onClick={() => changeLanguage('sv')}
+                className="text-xl hover:text-green-200 transition"
+              >
+                SV
+              </button>
+               <button
+                onClick={() => changeLanguage('fi')}
+                className="text-xl hover:text-green-200 transition"
+              >
+                FI
+              </button>
+            </div>
           </div>
         </nav>
       </div>

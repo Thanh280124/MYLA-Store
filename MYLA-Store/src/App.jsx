@@ -5,11 +5,10 @@ import Hero from './Components/Hero';
 import Contact from './Components/Contact';
 import Products from './Components/Products';
 import Footer from './Components/Footer';
-
 function App() {
   const [showScrollUp, setShowScrollUp] = useState(false);
 
-  // Show/hide scroll-up button based on scroll position
+ 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -56,6 +55,7 @@ function App() {
           <FaArrowCircleUp size={24}/>
         </button>
       )}
+
     </div>
   );
 }
