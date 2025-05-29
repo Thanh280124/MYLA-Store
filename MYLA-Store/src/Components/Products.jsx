@@ -6,9 +6,20 @@ function Products() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedProduct, setSelectedProduct] = useState(null);
 
-  // Filter products based on search term
+    // Hàm loại bỏ dấu tiếng Việt
+  const removeVietnameseDiacritics = (str) => {
+    return str
+      .normalize('NFD') // Phân tách ký tự thành chữ cái và dấu
+      .replace(/[\u0300-\u036f]/g, '') // Xóa các dấu
+      .replace(/đ/g, 'd') // Thay 'đ' bằng 'd'
+      .replace(/Đ/g, 'D'); // Thay 'Đ' bằng 'D'
+  };
+
+  // Lọc sản phẩm dựa trên từ khóa tìm kiếm
   const filteredProducts = products.filter((product) =>
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    removeVietnameseDiacritics(product.name.toLowerCase()).includes(
+      removeVietnameseDiacritics(searchTerm.toLowerCase())
+    )
   );
 
   // Handle modal open/close
