@@ -33,7 +33,7 @@ function Products() {
   return (
     <section>
       <div className='px-5 py-10'>
-      <h2 className="text-4xl md:text-5xl font-bold text-center text-green-600 my-10">{t('productsTitle')}</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-green-600 my-10">{t('productsTitle')}</h2>
       <div className="flex flex-col items-center gap-10 mb-20">
         <input
           type="text"
