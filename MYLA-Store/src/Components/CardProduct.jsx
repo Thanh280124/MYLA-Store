@@ -7,7 +7,7 @@ function CardProduct({ product, onClick }) {
 
   return (
     <div
-      className="flex sm:flex-col justify-between gap-2 items-center bg-white p-5 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 cursor-pointer"
+      className="flex sm:flex-col justify-between gap-3 items-center bg-white p-5 rounded-lg shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 cursor-pointer"
       onClick={() => onClick(product)}
     >
       <img
