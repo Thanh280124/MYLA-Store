@@ -16,8 +16,8 @@ function CardProduct({ product, onClick }) {
         className="w-75 h-55 sm:h-90 sm:w-full object-fill rounded-lg mb-4"
       />
       <div className='flex flex-col justify-center items-center gap-10 sm:gap-2'>
-      <h2 className="text-2xl font-semibold text-gray-800 mb-5 text-center">{t(product.name)}</h2>
-      <p className="inline-block bg-green-600 text-white text-2xl font-semibold px-6 py-4 rounded-2xl shadow-sm">{product.price}</p>
+      <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-5 text-center">{t(product.name)}</h2>
+      <p className="text-xl sm:text-2xl inline-block bg-green-600 text-white font-semibold px-5 py-3 rounded-xl shadow-sm">{product.price}</p>
     </div>
     </div>
 
