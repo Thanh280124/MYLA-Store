@@ -33,7 +33,7 @@ const resources = {
       // Products (tên và mô tả)
       products: {
         1: { name: "Tôm Big Ray 16/20", description: "Tôm 16/20 tươi sống, chất lượng cao, thích hợp cho các món ăn hải sản như tôm nướng, hấp hoặc xào." },
-        2: { name: "Tôm Big Ray 20/330", description: "Tôm 20/330 tươi ngon, giàu dinh dưỡng, lý tưởng cho các món salad hoặc súp hải sản." },
+        2: { name: "Tôm Big Ray 20/30", description: "Tôm 20/30 tươi ngon, giàu dinh dưỡng, lý tưởng cho các món salad hoặc súp hải sản." },
         3: { name: "Tôm (Asian Choice) 16/20", description: "Tôm 16/20 Asian Choice, tươi ngon, chất lượng cao, thích hợp cho các món ăn châu Á như xào hoặc nướng." },
         4: { name: "Tôm DAYSEEDAY 13/15", description: "Tôm DAYSEEDAY 13/15, tươi sống, chất lượng cao, thích hợp cho các món ăn hải sản như tôm hấp hoặc nướng." },
         5: { name: "Cá Tra", description: "Cá Tra tươi ngon, giàu dinh dưỡng, lý tưởng cho các món chiên hoặc nướng." },
@@ -86,7 +86,7 @@ const resources = {
       // Products
       products: {
         1: { name: "Big Ray Shrimp 16/20", description: "Fresh 16/20 shrimp, high quality, perfect for seafood dishes like grilling, steaming, or stir-frying." },
-        2: { name: "Big Ray Shrimp 20/330", description: "Fresh and nutritious 20/330 shrimp, ideal for salads or seafood soups." },
+        2: { name: "Big Ray Shrimp 20/30", description: "Fresh and nutritious 20/30 shrimp, ideal for salads or seafood soups." },
         3: { name: "Asian Choice Shrimp 16/20", description: "Fresh and high-quality Asian Choice 16/20 shrimp, suitable for Asian dishes like stir-frying or grilling." },
         4: { name: "DAYSEEDAY Shrimp 13/15", description: "Fresh DAYSEEDAY 13/15 shrimp, high quality, suitable for seafood dishes like steaming or grilling." },
         5: { name: "Pangasius Fish", description: "Fresh and nutritious Pangasius fish, ideal for frying or grilling." },
@@ -139,7 +139,7 @@ const resources = {
       // Products
       products: {
         1: { name: "Big Ray Räkor 16/20", description: "Färska 16/20 räkor, hög kvalitet, perfekta för skaldjursrätter som grillning, ångning eller wok." },
-        2: { name: "Big Ray Räkor 20/330", description: "Färska och näringsrika 20/330 räkor, idealiska för sallader eller skaldjurssoppor." },
+        2: { name: "Big Ray Räkor 20/30", description: "Färska och näringsrika 20/30 räkor, idealiska för sallader eller skaldjurssoppor." },
         3: { name: "Asian Choice Räkor 16/20", description: "Färska och högkvalitativa Asian Choice 16/20 räkor, lämpliga för asiatiska rätter som wok eller grillning." },
         4: { name: "DAYSEEDAY Räkor 13/15", description: "Färska DAYSEEDAY 13/15 räkor, hög kvalitet, lämpliga för sk다ljursrätter som ångning eller grillning." },
         5: { name: "Pangasiusfisk", description: "Färsk och näringsrik Pangasiusfisk, idealisk för stekning eller grillning." },
@@ -193,7 +193,7 @@ const resources = {
     // Products
     products: {
       1: { name: "Big Ray Katkaravut 16/20", description: "Tuoreet 16/20 katkaravut, korkealaatuisia, täydellisiä äyriäisruokiin kuten grillaus, höyrytys tai wok." },
-      2: { name: "Big Ray Katkaravut 20/330", description: "Tuoreet ja ravitsevat 20/330 katkaravut, ihanteellisia salaatteihin tai äyriäiskeittoihin." },
+      2: { name: "Big Ray Katkaravut 20/30", description: "Tuoreet ja ravitsevat 20/30 katkaravut, ihanteellisia salaatteihin tai äyriäiskeittoihin." },
       3: { name: "Asian Choice Katkaravut 16/20", description: "Tuoreet ja korkealaatuiset Asian Choice 16/20 katkaravut, sopivat aasialaisiin ruokiin kuten wokkiin tai grilliin." },
       4: { name: "DAYSEEDAY Katkaravut 13/15", description: "Tuoreet DAYSEEDAY 13/15 katkaravut, korkealaatuisia, sopivia äyriäisruokiin kuten höyrytys tai grillaus." },
       5: { name: "Pangas-kala", description: "Tuore ja ravitseva pangasius-kala, ihanteellinen paistamiseen tai grillaamiseen." },
