@@ -68,7 +68,7 @@ function Products() {
             <img
               src={selectedProduct.image}
               alt={t(selectedProduct.name)}
-              className="w-75 h-65 sm:w-full sm:h-90 rounded-lg mb-4"
+              className="w-80 h-70 sm:w-full sm:h-90 rounded-lg mb-4"
             />
           </div>
             <p className="text-green-600 font-medium mb-2 text-xl sm:text-2xl">{selectedProduct.price}</p>
