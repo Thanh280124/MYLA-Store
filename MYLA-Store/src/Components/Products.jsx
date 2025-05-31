@@ -64,11 +64,13 @@ function Products() {
               <IoCloseCircle size={27} color='red'/>
               </button>
             </div>
+          <div className="flex justify-center">
             <img
               src={selectedProduct.image}
               alt={t(selectedProduct.name)}
               className="w-75 h-65 sm:w-full sm:h-90 rounded-lg mb-4"
             />
+          </div>
             <p className="text-green-600 font-medium mb-2 text-xl sm:text-2xl">{selectedProduct.price}</p>
             <p className="text-gray-600 text-xl">{t(selectedProduct.description)}</p>
           </div>
