@@ -53,7 +53,7 @@ function Products() {
       {/* Modal for product details */}
       {selectedProduct && (
         <div onClick={closeModal} className="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50">
-          <div className="bg-white p-6 rounded-lg max-w-md w-full mx-4 h-110 sm:h-120 overflow-y-auto shadow-lg">
+          <div className="bg-white p-6 rounded-lg max-w-md w-full mx-4 h-110 sm:h-120 xl:h-250 overflow-y-auto shadow-lg">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl sm:text-2xl font-semibold">{t(selectedProduct.name)}</h2>
               <button
