@@ -13,7 +13,7 @@ function CardProduct({ product, onClick }) {
       <img
         src={product.image}
         alt={t(product.name)}
-        className="w-45 h-35 sm:h-90 sm:w-full object-fill rounded-lg mb-4"
+        className="w-45 h-35 sm:h-80 sm:w-full xl:h-90 xl:w-full object-fill rounded-lg mb-4"
       />
       <div className='flex flex-col justify-center items-center gap-3 sm:gap-2'>
       <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-5 text-center">{t(product.name)}</h2>
