@@ -45,7 +45,7 @@ const products = [
   { 
     id: 7, 
     name: "products.7.name",
-    price: "12.55 euro", 
+    price: "12.5 euro", 
     image: "/assets/product 7.jpg",
     description: "products.7.description"
   },
@@ -73,7 +73,7 @@ const products = [
   { 
     id: 11, 
     name: "products.11.name",
-    price: "44.5 euro", 
+    price: "4.5 euro", 
     image: "/assets/product 11.jpg",
     description: "products.11.description"
   },
@@ -94,28 +94,28 @@ const products = [
   { 
     id: 14, 
     name: "products.14.name",
-    price: "4.55 euro", 
+    price: "4.5 euro", 
     image: "/assets/product 14.jpg",
     description: "products.14.description"
   },
   { 
     id: 15, 
     name: "products.15.name",
-    price: "22 euro", 
+    price: "2 euro", 
     image: "/assets/product 15.jpg",
     description: "products.15.description"
   },
   { 
     id: 16, 
     name: "products.16.name",
-    price: "5.55 euro", 
+    price: "5.5 euro", 
     image: "/assets/product 16.jpg",
     description: "products.16.description"
   },
   { 
     id: 17, 
     name: "products.17.name",
-    price: "2.88 euro", 
+    price: "2.8 euro", 
     image: "/assets/product 17.jpg",
     description: "products.17.description"
   },
