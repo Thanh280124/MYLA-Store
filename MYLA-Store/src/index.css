@@ -58,3 +58,10 @@
     padding: 50px;
   }
 }
+
+@media (min-width: 1850px) {
+  .grid-container {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    padding: 50px;
+  }
+}
